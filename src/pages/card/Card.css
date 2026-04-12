@@ -1,0 +1,234 @@
+/* Общий контейнер страницы */
+.card-page {
+    padding: 60px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Навигационная цепочка (хлебные крошки) */
+.path {
+    margin-bottom: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+.path b {
+    color: #000;
+}
+
+/* Основная сетка контента */
+.product-content {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+/* --- ЛЕВАЯ СТОРОНА: ГАЛЕРЕЯ --- */
+.gallery-side {
+    display: flex;
+    gap: 30px;
+}
+
+.small-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.small-imgs img {
+    width: 170px;
+    height: 138px;
+    background: #F5F5F5;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.small-imgs img.active {
+    border: 2px solid #2196F3;
+}
+
+.big-img {
+    width: 500px;
+    height: 600px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.big-img img {
+    width: 80%;
+    object-fit: contain;
+}
+
+/* --- ПРАВАЯ СТОРОНА: ИНФО --- */
+.info-side {
+    max-width: 400px;
+}
+
+.info-side h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.green {
+    color: #00FF66;
+}
+
+.price-tag {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 21px;
+    border-bottom: 1px solid #7d7d7d;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+/* Выбор параметров (Цвет, Размер) */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.dot.blue { background-color: #A0BCE0; }
+.dot.red { background-color: #E07575; }
+
+.dot.active {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.size-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #7d7d7d;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.size-btn.active {
+    background: #DB4444;
+    color: #fff;
+    border-color: #DB4444;
+}
+
+/* Блок покупки */
+.buy-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.counter {
+    display: flex;
+    border: 1px solid #7d7d7d;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.counter button {
+    width: 40px;
+    height: 44px;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.counter button:hover {
+    background: #DB4444;
+    color: #fff;
+}
+
+.counter span {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-left: 1px solid #7d7d7d;
+    border-right: 1px solid #7d7d7d;
+}
+
+.main-buy-btn {
+    background: #DB4444;
+    color: #fff;
+    border: none;
+    padding: 0 48px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.fav-icon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #7d7d7d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Информационный бокс доставки */
+.ship-box {
+    border: 1px solid #7d7d7d;
+    border-radius: 4px;
+}
+
+.ship-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.ship-item:first-child {
+    border-bottom: 1px solid #7d7d7d;
+}
+
+.ship-item i {
+    font-size: 32px;
+}
+
+.ship-item b {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.ship-item p {
+    font-size: 12px;
+    text-decoration: underline;
+    margin: 0;
+}

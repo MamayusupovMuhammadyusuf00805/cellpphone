@@ -1,0 +1,45 @@
+.about-story {
+  padding: 80px 0;
+  overflow: hidden; 
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.story-content {
+  flex: 1;
+  max-width: 525px; 
+}
+
+.story-content h1 {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.story-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.story-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 700px; 
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+

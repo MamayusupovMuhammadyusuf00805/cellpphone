@@ -1,0 +1,294 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+
+}
+
+.lefth {
+    padding-bottom: 140px;
+}
+
+.lefth p {
+    padding: 7px 0px;
+}
+
+.righth img {
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.time1 {
+    display: flex;
+    gap: 20px;
+}
+
+.time {
+    display: flex;
+    gap: 45px;
+}
+
+.header .day {
+    color: #DB4444;
+    font-size: 18px;
+}
+
+.arrows {
+    display: flex;
+    gap: 20px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 50px;
+}
+
+.flex {
+    width: 220px;
+    height: 270px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.flex p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    padding: 10px 0px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.flex span {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    color: #DB4444;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 10px 0px;
+}
+
+.star {
+    padding: 10px 0px;
+    color: #FFAD33;
+    display: flex;
+    gap: 5px;
+}
+
+.flex button {
+    border: none;
+    padding: 5px 13px;
+    background-color: #DB4444;
+    color: white;
+    border-radius: 6px;
+}
+
+.flex1 {
+    display: flex;
+    align-items: center;
+}
+
+.ic {
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bt {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.bt button {
+    padding: 15px 35px;
+    border: none;
+    background-color: #DB4444;
+    color: #fff;
+    border-radius: 9px;
+}
+
+.ar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.cat {
+    padding-left: 80px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    color: #DB4444;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.icon {
+    display: flex;
+    gap: 8px;
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+
+}
+
+.type1 {
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #DB4444;
+    transition: 0.6s;
+}
+
+.type1:hover {
+    transform: scale(1.1);
+}
+
+.best {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.best button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 9px;
+    background-color: #DB4444;
+    color: #fff;
+}
+
+.month {
+    padding-left: 80px;
+}
+
+.header3 {
+    padding: 50px 0px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    gap: 40px;
+}
+
+.product1 {
+    width: 260px;
+    box-shadow: 1px 1px 10px gray;
+    padding: 20px;
+}
+
+.heart {
+    padding-left: 190px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.music{
+    padding: 70px 0px;
+}
+.music img{
+    border-radius: 20px;
+}
+.header4 p{
+    padding-left: 60px;
+    color: #DB4444;
+}
+.exploring{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.allpro{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    gap: 20px;
+}
+.all1{
+    width: 250px;
+   box-shadow: 1px 1px 10px;
+    padding: 20px;
+    border-radius: 16px;
+    
+}
+.all1 p{
+    padding: 10px 0px;
+}
+.all1 span{
+    color: #DB4444;
+    padding: 10px 0px;
+}
+.i{
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section4 p{
+        padding: 10px 0px;
+        color: #DB4444;
+}
+.section4 h2{
+    padding: 10px 0px;
+}
+.perfume{
+    display: flex;
+    justify-content:   center;
+    gap: 40px;
+
+}

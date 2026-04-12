@@ -1,0 +1,37 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sign{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px;
+
+}
+.lefts{
+    width: 600px;
+}
+.lefts img{
+    width: 100%;
+}
+.form{
+    width: 280px;
+    height: 450px;
+}
+.form p{
+    padding: 10px 0px;
+}
+.btw button{
+    padding: 20px 70px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.btw{
+    display: flex;
+    gap: 10px;
+    padding: 40px 0px;
+    flex-direction: column;
+}
