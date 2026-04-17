@@ -13,8 +13,8 @@ function Navbar() {
           <p>
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
             <Link to="/shop" className="shop-now-btn">
-              {" "}
-              ShopNow{" "}
+           
+              ShopNow
             </Link>
           </p>
           <select className="lang-select">

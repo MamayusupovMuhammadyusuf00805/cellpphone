@@ -1,267 +1,269 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 
 
 .bar {
-  background-color: #000;
-  color: #fff;
-  padding: 12px 0;
-  font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 14px;
 }
 
 .top-bar-flex {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .top-bar-flex p {
-  margin: 0;
-  font-weight: 400;
+    margin: 0;
+    font-weight: 400;
 }
 
 .shop-now-btn {
-  color: #fff;
-  font-weight: 600;
-  margin-left: 8px;
-  text-decoration: underline;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 8px;
+    text-decoration: underline;
 }
 
 .lang-select {
-  background: transparent;
-  color: #fff;
-  border: none;
-  position: absolute;
-  right: 0; 
-  cursor: pointer;
-  outline: none;
-  font-size: 14px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
 }
 
 .lang-select option {
-  color: #000;
+    color: #000;
 }
 
 
 .bar1 {
-  padding: 20px 0;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
-  margin-top: 20px;
+    padding: 20px 0;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
 }
 
 .main-nav-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 0;
 }
 
 .nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 48px;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu a {
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  transition: 0.2s;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.2s;
 }
 
 
 .nav-menu a.active {
-  border-bottom: 2px solid #7d8184;
+    border-bottom: 2px solid #7d8184;
 }
 
 
 .nav-right {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search-box input {
-  background: #f5f5f5;
-  border: none;
-  padding: 10px 40px 10px 15px;
-  border-radius: 4px;
-  width: 243px;
-  font-size: 12px;
-  outline: none;
+    background: #f5f5f5;
+    border: none;
+    padding: 10px 40px 10px 15px;
+    border-radius: 4px;
+    width: 243px;
+    font-size: 12px;
+    outline: none;
 }
 
 .search-box i {
-  position: absolute;
-  right: 12px;
-  font-size: 16px;
-  cursor: pointer;
+    position: absolute;
+    right: 12px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .nav-icons a {
-  color: #000;
-  font-size: 20px;
-  transition: 0.2s;
+    color: #000;
+    font-size: 20px;
+    transition: 0.2s;
 }
 
 .nav-icons a:hover {
-  color: #db4444; 
+    color: #db4444;
 }
+
 .footer {
-  background-color: #000;
-  color: #fff;
-  padding: 80px 0 24px;
-  font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0 24px;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap; 
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer-col {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-logo {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
 }
 
 .footer-col h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 
 .footer-col p {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
 }
 
 .footer-col ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-col ul li {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-col a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
 }
 
 .footer-col a:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 
 .footer-input-wrapper {
-  display: flex;
-  align-items: center;
-  border: 1.5px solid #fff;
-  border-radius: 4px;
-  padding: 8px 12px;
-  width: 100%;
-  max-width: 217px;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 217px;
 }
 
 .footer-input-wrapper input {
-  background: transparent;
-  border: none;
-  color: #fff;
-  outline: none;
-  width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: 100%;
 }
 
 .send-btn {
-  background: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .app-promo {
-  font-size: 12px !important;
-  color: rgba(255, 255, 255, 0.7);
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .download-wrapper {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 24px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
 .qr-code img {
-  width: 80px;
-  height: 80px;
+    width: 80px;
+    height: 80px;
 }
 
 .app-buttons img {
-  width: 110px;
-  display: block;
-  margin-bottom: 8px;
+    width: 110px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 
 .social-links {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .social-links i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
-  padding-top: 16px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 60px;
+    padding-top: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -270,10 +272,10 @@
 .user-modal {
     position: absolute;
     right: 0;
-    top: 35px; 
+    top: 35px;
     width: 224px;
     background: linear-gradient(180deg, rgba(29, 28, 28, 0.699) 0%, rgba(34, 31, 31, 0.589) 100%);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     border-radius: 4px;
     padding: 15px 0;
     z-index: 999;
@@ -307,4 +309,82 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.logo {
+
+    display: inline-block;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+
+    /* Стиль текста */
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 2px;
+
+
+    transition: all 0.5s ease;
+
+    animation: constant-rotate 6s linear infinite;
+}
+
+
+.logo:hover {
+    animation-play-state: paused;/ color: #db4444;
+    filter: drop-shadow(0 0 15px rgba(219, 68, 68, 0.6));
+    transform: scale(1.1);
+    /* Немного увеличиваем при наведении */
+}
+
+
+@keyframes constant-rotate {
+    0% {
+        transform: rotateY(0deg);
+        text-shadow: none;
+    }
+
+    25% {
+
+        text-shadow: 2px 0 10px rgba(219, 68, 68, 0.884);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+.logo::after {
+    content: "Exclusive";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    clip-path: polygon(-20% 0, 0% 0, -10% 100%, -30% 100%);
+
+    animation: constant-shine 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes constant-shine {
+
+    0%,
+    20% {
+        clip-path: polygon(-20% 0, 0% 0, -10% 100%, -30% 100%);
+    }
+
+    80%,
+    100% {
+        clip-path: polygon(110% 0, 130% 0, 120% 100%, 100% 100%);
+    }
 }

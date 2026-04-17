@@ -9,18 +9,7 @@ import Card from "./pages/card/Card";
 import Log from "./pages/log/Log";
 
 function App() {
-  useEffect(() => {
-    fetch("https://ecommercev01.pythonanywhere.com/")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Ошибка загрузки:", err);
-        setLoading(false);
-      });
-  }, []);
+
 
   return (
     <BrowserRouter>
@@ -29,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/sign" element={<Sign />} />
-        <Route path="/card/:id" element={<Card />} />
+        <Route path="/card" element={<Card />} />
         <Route path="/log" element={<Log />} />
       </Routes>
       <Footer />

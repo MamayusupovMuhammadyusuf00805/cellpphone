@@ -1,36 +1,109 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import "./Card.css";
+import Cards from "../../components/Cards";
 
-function Card({ products }) {
-  // Получаем id из URL
-  const { id } = useParams();
-
-  // Ищем конкретный продукт в массиве
-  // Используем String(), чтобы сравнение работало, даже если id — строка, а в базе — число
-  const product = products.find((item) => String(item.id) === String(id));
-
-  // Если данных еще нет (идет загрузка) или товар не найден
-  if (!product) {
-    return (
-      <div style={{ padding: "20px", textAlign: "center" }}>
-        <h2>Товар загружается или не найден...</h2>
-      </div>
-    );
-  }
-
+function Card() {
   return (
-    <div className="product-card-detail" style={{ padding: "20px" }}>
-      <h1>{product.title || product.name}</h1>
-      <img 
-        src={product.image} 
-        alt={product.title} 
-        style={{ maxWidth: "300px" }} 
-      />
-      <p>{product.description}</p>
-      <p><strong>Цена: {product.price} USD</strong></p>
+    <div className="cardpage">
+      <div className="container">
+        
+        {/* Основная карточка товара */}
+        <div className="product-card">
+          <div className="path">
+            Account / Gaming / <span className="path-active">Havic HV G-92 Gamepad</span>
+          </div>
+
+          <div className="product-content">
+            <div className="product-gallery">
+              <div className="thumb-list">
+                <div className="thumb-card"> <img src="/imgs/image 57.png" alt="thumb" /> </div>
+                <div className="thumb-card"> <img src="/imgs/image 57.png" alt="thumb" /> </div>
+                <div className="thumb-card"> <img src="/imgs/image 57.png" alt="thumb" /> </div>
+                <div className="thumb-card"> <img src="/imgs/image 57.png" alt="thumb" /> </div>
+              </div>
+              <div className="main-img-box">
+                <img src="/imgs/Frame 894.png" alt="main" />
+              </div>
+            </div>
+
+            <div className="product-info">
+              <h1 className="title">Havic HV G-92 Gamepad</h1>
+              
+              <div className="stats">
+                <span className="stars">
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                </span>
+                <span className="reviews">(150 Reviews) | </span>
+                <span className="stock">In Stock</span>
+              </div>
+
+              <div className="price">$192.00</div>
+
+              <p className="desc">
+                PlayStation 5 Controller Skin High quality vinyl with air channel adhesive 
+                for easy bubble free install & mess free removal.
+              </p>
+
+              <div className="row">
+                <span className="label">Colours:</span>
+                <div className="color-dot color-blue"></div>
+                <div className="color-dot color-red"></div>
+              </div>
+
+              <div className="row">
+                <span className="label">Size:</span>
+                <button className="size-btn">XS</button>
+                <button className="size-btn">S</button>
+                <button className="size-btn size-btn-active">M</button>
+                <button className="size-btn">L</button>
+                <button className="size-btn">XL</button>
+              </div>
+
+              <div className="buy-row">
+                <div className="counter">
+                  <button className="btn-control"><i className="fa-solid fa-minus"></i></button>
+                  <div className="count-val">2</div>
+                  <button className="btn-control btn-plus"><i className="fa-solid fa-plus"></i></button>
+                </div>
+                <button className="buy-now">Buy Now</button>
+                <button className="wishlist-btn"><i className="fa-regular fa-heart"></i></button>
+              </div>
+
+              <div className="delivery-box">
+                <div className="delivery-item line">
+                  <i className="fa-solid fa-truck-fast delivery-icon"></i>
+                  <div className="delivery-text">
+                    <div className="delivery-title">Free Delivery</div>
+                    <div className="delivery-subtitle">Enter your postal code</div>
+                  </div>
+                </div>
+                <div className="delivery-item">
+                  <i className="fa-solid fa-arrows-rotate delivery-icon"></i>
+                  <div className="delivery-text">
+                    <div className="delivery-title">Return Delivery</div>
+                    <div className="delivery-subtitle">Free 30 Days Delivery Returns.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div className="related-section">
+           <Cards />
+           <Cards />
+           <Cards />
+           <Cards />
+        </div>
+
+      </div> 
     </div>
   );
 }
 
-// ВОТ ЭТА СТРОЧКА ИСПРАВЛЯЕТ ВАШУ ОШИБКУ:
 export default Card;
