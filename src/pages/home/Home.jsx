@@ -1,28 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Cards from "../../components/Cards";
 import Products from "../../components/Products";
 import Pros from "../../components/Pros";
+import { Datacontext } from "../../App";
 function Home() {
+  const { datacategory } = useContext(Datacontext);
+  console.log(datacategory);
+  const {productdata} =useContext(Datacontext)
   return (
     <div className="homepage">
       <div className="container">
         <div className="hero">
           <div className="lefth">
-            <p>
-              Woman’s Fashion <i class="fa-solid fa-chevron-right"></i>
-            </p>
-            <p>
-              Men’s Fashion <i class="fa-solid fa-chevron-right"></i>
-            </p>
-            <p>Electronics</p>
-            <p>Home & Lifestyle</p>
-            <p>Medicine</p>
-            <p>Sports & Outdoor</p>
-            <p>Baby’s & Toys</p>
-            <p>Groceries & Pets</p>
-            <p>Health & Beauty</p>
+            {datacategory?.map((item) => {
+              return <p> <img src={item?.image} alt="" />{item?.title}</p>;
+            })}
           </div>
           <div className="righth">
             <img src="/imgs/Frame 560.png" alt="" />
@@ -58,10 +52,13 @@ function Home() {
         </div>
         <div className="container">
           <div className="flexbox">
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            {
+                productdata?.map((item)=>{
+                    return <Cards item={item} />
+                })
+            }
+           
+          
           </div>
         </div>
         <div className="bt">
@@ -149,7 +146,6 @@ function Home() {
             <Products />
             <Products />
             <Products />
-           
           </div>
           <div className="bt">
             <button>View All Products</button>

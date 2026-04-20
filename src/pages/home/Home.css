@@ -13,6 +13,14 @@
 .lefth {
     padding-bottom: 140px;
 }
+.lefth {
+    width: 35px;
+    display: flex;
+flex-direction: column-reverse;
+}
+.lefth img{
+    width: 100%;
+}
 
 .lefth p {
     padding: 7px 0px;
@@ -60,6 +68,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
+    flex-wrap: wrap;
     gap: 50px;
 }
 

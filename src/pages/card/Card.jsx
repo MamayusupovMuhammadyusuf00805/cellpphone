@@ -1,13 +1,13 @@
 import React from "react";
 import "./Card.css";
 import Cards from "../../components/Cards";
+import Products from "../../components/Products";
 
 function Card() {
   return (
     <div className="cardpage">
       <div className="container">
-        
-        {/* Основная карточка товара */}
+       
         <div className="product-card">
           <div className="path">
             Account / Gaming / <span className="path-active">Havic HV G-92 Gamepad</span>

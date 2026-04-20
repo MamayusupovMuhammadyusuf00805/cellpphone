@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { baseurl } from "../services/app";
 
-function Cards() {
+function Cards({item}) {
   return (
     <>
       <Link className="flex">
@@ -9,10 +10,10 @@ function Cards() {
           <button>-40%</button>
 
         </div>
-        <img src="public/imgs/Frame 611.png" alt="" />
+        <img src={`${baseurl}/${item?.pictures[0]}`} alt={item?.title} />
         <button className="add-to-cart">Add To Cart</button>
 
-        <p>HAVIT HV-G92 Gamepad</p>
+        <p>{item?.title.slice(0,20)}</p>
         <span>$120</span>
         <div className="star">
           <i className="fa-regular fa-star"></i>

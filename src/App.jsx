@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -7,21 +7,35 @@ import Footer from "./components/Footer";
 import Sign from "./pages/sign/Sign";
 import Card from "./pages/card/Card";
 import Log from "./pages/log/Log";
+import { categorydata, getproduct } from "./services/app";
+export const Datacontext = createContext();
 
 function App() {
-
+  const [datacategory, setdatacategory] = useState();
+  const [productdata, setproductdata] = useState();
+  useEffect(() => {
+    categorydata()?.then((info) => {
+      setdatacategory(info);
+    });
+    getproduct()?.then((product) => {
+      setproductdata(product);
+    });
+  }, []);
+  console.log(datacategory);
 
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/sign" element={<Sign />} />
-        <Route path="/card" element={<Card />} />
-        <Route path="/log" element={<Log />} />
-      </Routes>
-      <Footer />
+      <Datacontext value={{ datacategory, productdata }}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/sign" element={<Sign />} />
+          <Route path="/card" element={<Card />} />
+          <Route path="/log" element={<Log />} />
+        </Routes>
+        <Footer />
+      </Datacontext>
     </BrowserRouter>
   );
 }

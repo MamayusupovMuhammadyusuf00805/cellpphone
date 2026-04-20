@@ -1,0 +1,12 @@
+.rights form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    width: 300px;
+    padding: 10px 0px;
+}
+ form button{
+    padding: 10px 20px;
+}
