@@ -1,12 +1,36 @@
-.rights form{
+.rights form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-form input{
+
+form input {
     width: 300px;
     padding: 10px 0px;
 }
- form button{
+
+form button {
     padding: 10px 20px;
+}
+
+.log {
+    background-color: #DB4444;
+    border: none;
+
+}
+
+form h2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 36px;
+    color: #000000;
+    line-height: 30px;
+    letter-spacing: 4%;
+
+}
+
+.log1 {
+    background-color: #FFFFFF;
+    border: none;
 }

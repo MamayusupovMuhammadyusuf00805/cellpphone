@@ -1,33 +1,36 @@
-import React from 'react'
-import "./Sign.css"
+import React from "react";
+import "./Sign.css";
 function Sign() {
   return (
-    <div className='signpage'>
-        <div className="container">
-            <div className="sign">
-                <div className="lefts">
-                    <img src="public/imgs/Side Image.png" alt="" />
-                </div>
-                <div className="rights">
-                    <div className="form">
-                        <h1>Create an account</h1>
-                        <p>Enter your details below</p>
-                        <p>Name:</p>
-                        <hr />
-                        <p>Email or Phone Number:</p>
-                        <hr />
-                        <p>Password</p>
-                        <hr />
-                   <div className="btw">
-                         <button>Create an Account</button>
-                        <button> <i class="fa-brands fa-google"></i>Sign up with Google</button>
-                   </div>
-                    </div>
-                </div>
+    <div className="signpage">
+      <div className="container">
+        <div className="sign">
+          <div className="lefts">
+            <img src="public/imgs/Side Image.png" alt="" />
+          </div>
+          <div className="rights">
+            <div className="form">
+              <form action="">
+                <input type="text" placeholder="Name:" />
+                <hr />
+                <input type="text" placeholder="Email or Phone Number:" />
+                <hr />
+                <input type="text" placeholder="Password:" />
+                <hr />
+              </form>
+              <div className="btw">
+                <button className="bt1">Create an Account</button>
+                <button className="bt">
+                  <i class="fa-brands fa-google"></i>Sign up with Google
+                </button>
+                <p>Already have account? Log in</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Sign
+export default Sign;

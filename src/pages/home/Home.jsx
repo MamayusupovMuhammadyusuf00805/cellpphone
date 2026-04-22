@@ -9,13 +9,14 @@ function Home() {
   const { datacategory } = useContext(Datacontext);
   console.log(datacategory);
   const {productdata} =useContext(Datacontext)
+
   return (
     <div className="homepage">
       <div className="container">
         <div className="hero">
           <div className="lefth">
             {datacategory?.map((item) => {
-              return <p> <img src={item?.image} alt="" />{item?.title}</p>;
+              return <p> <img src={item?.image } alt="" />{item?.title}</p>;
             })}
           </div>
           <div className="righth">

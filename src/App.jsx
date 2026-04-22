@@ -7,7 +7,9 @@ import Footer from "./components/Footer";
 import Sign from "./pages/sign/Sign";
 import Card from "./pages/card/Card";
 import Log from "./pages/log/Log";
-import { categorydata, getproduct } from "./services/app";
+import { categorydata, getproduct, onepro } from "./services/app";
+import Wishlist from "./pages/wishlist/Wishlist";
+
 export const Datacontext = createContext();
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Datacontext value={{ datacategory, productdata }}>
+      <Datacontext value={{ datacategory, productdata,onepro }}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,6 +35,7 @@ function App() {
           <Route path="/sign" element={<Sign />} />
           <Route path="/card" element={<Card />} />
           <Route path="/log" element={<Log />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
         <Footer />
       </Datacontext>

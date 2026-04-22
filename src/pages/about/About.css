@@ -1,45 +1,133 @@
 .about-story {
-  padding: 80px 0;
-  overflow: hidden; 
+    padding: 80px 0;
+    overflow: hidden;
 }
 
 .story-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .story-content {
-  flex: 1;
-  max-width: 525px; 
+    flex: 1;
+    max-width: 525px;
 }
 
 .story-content h1 {
-  font-size: 54px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  font-family: 'Inter', sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
 }
 
 .story-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 24px;
-  color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #000;
 }
 
 .story-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .story-image img {
-  width: 100%;
-  max-width: 700px; 
-  height: auto;
-  border-radius: 4px;
-  object-fit: cover;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.customer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 20px;
+}
+
+
+.subscriber {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.subscriber:hover {
+    transform: scale(1.05);
+    background-color: #DB4444;
+    color: #ccc;
+    border-color: #DB4444;
+}
+
+
+.subscriber img {
+    margin-bottom: 15px;
+
+}
+
+.member .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+
+}
+
+.members p {
+    padding: 5px 0px;
+}
+
+.members h2 {
+    padding: 10px 0px;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    color: #000000;
+    line-height: 30px;
+    letter-spacing: 4%;
+
+}
+
+.media {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.media i {
+    font-size: 22px
+}
+
+.money .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    gap: 80px;
+}
+
+.cash h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    color: #000;
+    padding: 10px 0px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+}

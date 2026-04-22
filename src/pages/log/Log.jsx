@@ -11,10 +11,14 @@ function Log() {
                 </div>
                 <div className="rights">
                  <form action="">
-                   
+                   <h2>Log in to Exclusive</h2>
+                   <p>Enter your details below</p>
                     <input type="text" placeholder='Email or Phone Number:'/>
+                    <hr />
                     <input type="text" placeholder='Password'/>
-                      <button>Log In</button>
+                    <hr />
+                      <button className='log'>Log In</button>
+                      <button className='log1'>Forget Password?</button>
                  </form>
                
                 </div>
