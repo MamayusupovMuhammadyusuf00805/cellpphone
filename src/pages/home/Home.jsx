@@ -8,7 +8,7 @@ import { Datacontext } from "../../App";
 function Home() {
   const { datacategory } = useContext(Datacontext);
   console.log(datacategory);
-  const {productdata} =useContext(Datacontext)
+  const { productdata } = useContext(Datacontext);
 
   return (
     <div className="homepage">
@@ -16,7 +16,12 @@ function Home() {
         <div className="hero">
           <div className="lefth">
             {datacategory?.map((item) => {
-              return <p> <img src={item?.image } alt="" />{item?.title}</p>;
+              return (
+           <div className="row">
+                 <p>{item?.title}</p>
+                 <img src={item?.image} alt="" />
+           </div>
+              );
             })}
           </div>
           <div className="righth">
@@ -53,13 +58,9 @@ function Home() {
         </div>
         <div className="container">
           <div className="flexbox">
-            {
-                productdata?.map((item)=>{
-                    return <Cards item={item} />
-                })
-            }
-           
-          
+            {productdata?.slice(0, 4).map((item) => {
+              return <Cards key={item.id} item={item} />;
+            })}
           </div>
         </div>
         <div className="bt">
@@ -143,12 +144,8 @@ function Home() {
             <Products />
             <Products />
             <Products />
-            <Products />
-            <Products />
-            <Products />
-            <Products />
           </div>
-          <div className="bt">
+          <div className="btz">
             <button>View All Products</button>
           </div>
         </div>

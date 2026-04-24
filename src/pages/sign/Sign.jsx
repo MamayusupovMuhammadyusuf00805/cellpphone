@@ -20,7 +20,7 @@ function Sign() {
               </form>
               <div className="btw">
                 <button className="bt1">Create an Account</button>
-                <button className="bt">
+                <button className="btss">
                   <i class="fa-brands fa-google"></i>Sign up with Google
                 </button>
                 <p>Already have account? Log in</p>

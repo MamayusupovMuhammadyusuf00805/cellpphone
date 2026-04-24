@@ -54,6 +54,11 @@ function Navbar() {
                 Log in
               </NavLink>
             </li>
+            <li>
+                <NavLink to="/wishlist">
+                    Wishlist
+                </NavLink>
+            </li>
           </ul>
 
           <div className="nav-right">

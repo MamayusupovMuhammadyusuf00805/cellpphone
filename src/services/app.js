@@ -1,4 +1,4 @@
- export const categorydata = () => {
+export const categorydata = () => {
   const requestOptions = {
     method: "GET",
     redirect: "follow",
@@ -10,42 +10,60 @@
   )
     .then((response) => response.json())
     .then((result) => {
-        return(result)
+      return result;
     })
     .catch((error) => {
-        return(error)
+      return error;
     });
 };
- export const getproduct=()=>{
-    const requestOptions = {
-  method: "GET",
-  redirect: "follow"
+export const getproduct = () => {
+  const requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
+
+  return fetch(
+    "https://ecommercev01.pythonanywhere.com/product/list/",
+    requestOptions,
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      return result;
+    })
+    .catch((error) => {
+      return error;
+    });
 };
 
- return fetch("https://ecommercev01.pythonanywhere.com/product/list/", requestOptions)
-  .then((response) => response.json())
-  .then((result) => {
-    return(result)
-  })
-  .catch((error) => {
-    return(error)
-  });
-}
-
- export const baseurl="https://ecommercev01.pythonanywhere.com/"
+export const baseurl = "https://ecommercev01.pythonanywhere.com";
 
 
 export const onepro = (id) => {
   return fetch(`https://ecommercev01.pythonanywhere.com/product/detail/?product_id=${id}`)
-    .then((res) => res.json())
-    .catch((err) => console.log("Ошибка в API:", err));
+    .then((response) => response.json())
+    .then((result) => {
+      return result;
+    })
+    .catch((error) => {
+      console.error(error);
+      return null;
+    });
 };
 
 
- export const handleGoToWishlist = (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  
-  // Переходим и передаем объект item целиком в состоянии (state)
-  navigate("/wishlist", { state: { product: item } });
+
+
+export const wishlist = () => {
+  const requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
+
+  return fetch("https://ecommercev01.pythonanywhere.com/action/my-wishlist/", requestOptions)
+    .then((response) => response.json())
+    .catch((error) => {
+      console.error(error);
+      return []; 
+    });
 };
+
